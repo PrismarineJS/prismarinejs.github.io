@@ -173,3 +173,10 @@
 .mainTeamHeader .col-lg-4 {
     float: right;
 }
+
+h4 small {
+    color: #AAA;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
