@@ -1,0 +1,59 @@
+extends _layout
+
+prepend titleDeterminer
+  - var pageTitle = 'Minecraft in Node.js'
+
+append head
+  link(rel='stylesheet', href='css/index.css')
+
+block content
+  .container-fluid.mainHeader
+    .forkUs.hidden-sm.hidden-xs
+      a.fill(href='https://github.com/PrismarineJS', title='PrismarineJS at GitHub')
+        .text Fork us on GitHub
+    .vertical-flex-center
+      .col-lg-8.center-block
+        img.center-block.img-responsive(src='images/source/Prismarine.svg', alt='PrismarineJS')
+      .col-lg-10.center-block.text-center
+        h2.subHeader A Minecraft-compatible game server written in Node.js
+    .scroll-hint Scroll Down
+
+  .container.mainPage.text-center
+    .vertical-flex-center
+      .row.col-lg-8.center-block
+        h2 What exactly is PrismarineJS?
+        p
+          | PrismarineJS is the name of a collaborative project on GitHub consisting of multiple Node.js Minecraft Server Modules,
+          which can be used to make
+          a(href='https://github.com/PrismarineJS/mineflayer', title='PrismarineJS/Mineflayer on GitHub') bots
+          | ,
+          a(href='https://github.com/PrismarineJS/flying-squid', title='PrismarineJS/Flying-Squid on GitHub') a standalone server
+          | , or a
+          a(href='https://github.com/PrismarineJS/node-minecraft-protocol', title='PrismarineJS/Node-Minecraft-Protocol on GitHub') Minecraft Protocol API
+          | .
+        a(href='https://github.com/PrismarineJS')
+          button.btn.btn-primary.btn-lg(type='button') Check out PrismarineJS on Github
+      .center-block.margin-clear.prismarineTeam
+        h2 The PrismarineJS Team
+        .horizontal-flex-center.mainTeamHeader
+          .col-lg-8 DEVELOPMENT
+          .col-lg-4 GRAPHIC DESIGN
+        .horizontal-flex-center.mainTeam
+          .col-lg-8
+            h4 Dennis Bartlett
+            h4 Andrew Kelley
+            h4 Robin Lambertz
+            h4 Romain Beaumont
+            h4 Will Franzen
+            h4 Josh Wolfe
+            h4 Harold Feit
+            h4
+              | Keegan (mhsjlw)
+              small
+                a(href='https://github.com/prismarinejs/flying-squid') flying-squid
+            h4
+              | Bryan Agredo
+              small Website
+            h4 Georges Oates Larsen (flynnn)
+          .col-lg-4
+            h4 Brady Africk

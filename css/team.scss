@@ -1,0 +1,56 @@
+.headerTitle {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    /* May be useful later
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2rem));*/
+}
+
+.meetTheTeam ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.meetTheTeam ul img {
+    border-radius: 15%;
+    height: 48px;
+    width: 48px;
+}
+
+.meetTheTeam ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.meetTheTeam ul li {
+    margin-bottom: 3px;
+}
+
+.meetTheTeam ul li img {
+    margin-right: 15px;
+    border-radius: 48px;
+}
+
+.meetTheTeam ul code {
+    background-color: #e83e8c;
+    color: #FFFFFF;
+    font-family: inherit;
+    padding: 0.2rem 0.5rem;
+    position: relative;
+    margin-left: 6px;
+    display: inline-block;
+}
+
+.meetTheTeam ul code:before {
+    content: '';
+    border-right: 3px solid #E83E8C;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: -3px;
+}
+
+.meetTheTeam h3 {
+    margin-bottom: 1rem;
+}

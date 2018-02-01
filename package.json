@@ -1,0 +1,29 @@
+{
+  "name": "prismarine-website",
+  "version": "0.1.0",
+  "description": "The website for the PrismarineJS project.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "jstransformer-markdown-it": "^2.0.0",
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "start": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrismarineJS/prismarinejs.github.io.git"
+  },
+  "author": "Bryan Agredo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PrismarineJS/prismarinejs.github.io/issues"
+  },
+  "homepage": "https://github.com/PrismarineJS/prismarinejs.github.io#readme"
+}

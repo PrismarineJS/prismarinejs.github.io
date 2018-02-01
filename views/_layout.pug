@@ -1,0 +1,65 @@
+block titleDeterminer
+  if pageTitle
+    - var title = 'PrismarineJS - ' + pageTitle
+  else
+    - var title = 'PrismarineJS'
+
+doctype html
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+      title= title
+
+      meta(property='og:title', content='PrismarineJS - Minecraft in Node.js')
+      meta(property='og:type', content='website')
+      meta(property='og:url', content='https://prismarinejs.github.io/')
+      meta(property='og:image', content='/images/PrismarineCube.png')
+      meta(property='og:description', content='A Minecraft Server, bot, and API all written in Node.js')
+      meta(property='og:locale', content='en_US')
+      meta(property='og:site_name', content='PrismarineJS')
+      meta(name='author', content='PrismarineJS Contributors')
+
+
+
+      meta(name='viewport',           content='width=device-width, initial-scale=1, user-scalable=no')
+      meta(name='description',        content='A Minecraft server, bot, and API all written in Node.js')
+      meta(name='theme-color',        content='#4DB396')
+      meta(name='application-name',   content='PrismarineJS')
+      link(rel='icon',                href='/images/PrismarineCube.png')
+      link(rel='icon',                href='/images/PrismarineCube.png' type='image/x-icon')
+      link(rel='icon',                href='/images/PrismarineCube.png' type='shortcut icon')
+      link(rel='apple-touch-icon',    href='/images/PrismarineCube.png')
+      link(rel='stylesheet',          href='/css/bootstrap.min.css')
+      link(rel='stylesheet',          href='/css/global.css')
+      link(rel='stylesheet',          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900")
+      link(rel='stylesheet',          href="https://fonts.googleapis.com/icon?family=Material+Icons")
+      script(type='text/javascript',  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin='anonymous')
+      script(type='text/javascript',  src='/js/bootstrap.min.js')
+  body.pb-5
+    block header
+      unless promo
+        - var promo = ''
+      .promoBanner(class=promo)
+        block navigation
+          mixin link(href, friendlyName)
+            li.nav-item
+              a.nav-link(href=href)= friendlyName
+          unless navtype
+            - var navtype = 'navbar-light'
+          nav.navbar.navbar-expand-md.container(class=navtype)
+            a.navbar-brand(href='/')
+              img(src="/images/source/PrismarineJS.svg" width="32" height="32" class="d-inline-block align-top" alt="PrismarineJS")
+            button.navbar-toggler(type='button', data-toggle="collapse"
+            data-target="#navbarContent" aria-controls="navbarContent"
+            aria-expanded="false" aria-label="Toggle navigation")
+              span.navbar-toggler-icon
+            .collapse.navbar-collapse(id="navbarContent")
+              ul.navbar-nav.mr-auto
+                //- +link('/team', 'Team')
+                +link('https://github.com/PrismarineJS', 'GitHub')
+    .content.container-fluid
+      block content
+    block footer
+      div
