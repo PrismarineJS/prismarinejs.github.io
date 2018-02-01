@@ -31,3 +31,9 @@
     background-size: 3.5rem, 100%;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), 0 100%);
 }
+
+@media (max-width: 576px) {
+    .promo > h1 {
+        font-size: 3rem;
+    }
+}
