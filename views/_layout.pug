@@ -27,16 +27,13 @@ html(lang='en')
       meta(name='description',        content='A Minecraft server, bot, and API all written in Node.js')
       meta(name='theme-color',        content='#4DB396')
       meta(name='application-name',   content='PrismarineJS')
-      link(rel='icon',                href='/images/favicon.png')
-      link(rel='icon',                href='/images/favicon.png' type='image/x-icon')
-      link(rel='icon',                href='/images/favicon.png' type='shortcut icon')
-      link(rel='apple-touch-icon',    href='/images/source/PrismarineJS.svg')
+      link(rel='icon',                href='/images/icon_mini.png')
+      link(rel='icon',                href='/images/icon_mini.png' type='image/x-icon')
+      link(rel='icon',                href='/images/icon_mini.png' type='shortcut icon')
+      link(rel='apple-touch-icon',    href='/images/icon.png')
       link(rel='stylesheet',          href='/css/bootstrap.min.css')
       link(rel='stylesheet',          href='/css/global.css')
-      link(rel='stylesheet',          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900")
-      link(rel='stylesheet',          href="https://fonts.googleapis.com/icon?family=Material+Icons")
-      script(type='text/javascript',  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin='anonymous')
-      script(type='text/javascript',  src='/js/bootstrap.min.js')
+      
   body.pb-5
     block header
       unless promo
@@ -62,4 +59,5 @@ html(lang='en')
     .content.container-fluid
       block content
     block footer
-      div
+      script(type='text/javascript',  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin='anonymous')
+      script(type='text/javascript',  src='/js/bootstrap.min.js')

@@ -26,10 +26,11 @@
 
 .promoBanner {
     background-image: url('/images/pattern.svg'), linear-gradient(45deg,#009688,#4db6ac) !important;
-    background-position: center center;
+    background-position: 0px 0px, 0px 0px;
     background-repeat: repeat;
     background-size: 3.5rem, 100%;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), 0 100%);
+    transition: 0ms background-position ease;
 }
 
 @media (max-width: 576px) {
