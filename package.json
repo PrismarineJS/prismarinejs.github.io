@@ -2,6 +2,7 @@
   "name": "prismarine.js.org",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://prismarine.js.org",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "react": "^16.3.2",
