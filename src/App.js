@@ -33,6 +33,13 @@ class Members extends Component {
   render() {
     return (
       <div className="container">
+        <h2>Main projects</h2>
+        <ul>
+          <li><a href="http://minecraft-data.prismarine.js.org/">Minecraft data</a> : Language independent module providing minecraft data for minecraft clients, servers and libraries.</li>
+          <li><a href="http://mineflayer.prismarine.js.org/">Mineflayer</a> : Create Minecraft bots with a powerful, stable, and high level JavaScript API..</li>
+          <li><a href="http://flying-squid.prismarine.js.org/">Flying-squid</a> : Create Minecraft servers with a powerful, stable, and high level JavaScript API.</li>
+          <li><a href="https://github.com/PrismarineJS/node-minecraft-protocol">Minecraft protocol</a> : Parse and serialize minecraft packets, plus authentication and encryption..</li>
+        </ul>
         <h2>Meet the Team</h2>
         <p>PrismarineJS is made possible by many contributors who have put their time and effort into making the project possible.</p>
         <div className="row">
