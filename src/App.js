@@ -18,6 +18,7 @@ class Members extends Component {
         { id: '2260564', name: 'Harold Feit', username: 'DreadWingKnight' },
         { id: '8526903', name: 'Keegan', username: 'mhsjlw', extra: 'flying-squid' },
         { id: '5000732', name: '', username: 'ciolt', extra: 'website' },
+        { id: '13330620', name: 'Kasper Seweryn', username: 'wvffle', extra: 'mineflayer' },
         { id: '850714', name: 'Georges Oates Larsen', username: 'flynnn' },
       ],
       artists: [
