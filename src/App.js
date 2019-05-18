@@ -8,21 +8,21 @@ class Members extends Component {
     super(props)
 
     this.state = {
-      developers: [
-        { id: '1077050', name: 'Dennis Bartlett', username: 'dcbartlett' },
-        { id: '106511', name: 'Andrew Kelley', username: 'andrewrk' },
-        { id: '1069318', name: 'Robin Lambertz', username: 'roblabla' },
+      maintainers: [
         { id: '2346494', name: 'Romain Beaumont', username: 'rom1504' },
-        { id: '1270100', name: 'Will Franzen', username: 'wtfaremyinitials' },
-        { id: '87436', name: 'Josh Wolfe', username: 'thejoshwolfe' },
-        { id: '2260564', name: 'Harold Feit', username: 'DreadWingKnight' },
+        { id: '1069318', name: 'Robin Lambertz', username: 'roblabla' },
         { id: '8526903', name: 'Keegan', username: 'mhsjlw', extra: 'flying-squid' },
-        { id: '5000732', name: '', username: 'ciolt', extra: 'website' },
         { id: '13330620', name: 'Kasper Seweryn', username: 'wvffle', extra: 'mineflayer' },
-        { id: '850714', name: 'Georges Oates Larsen', username: 'flynnn' },
+        { id: '8838132', name: 'plexigras', username: 'plexigras', extra: 'mineflayer'},
       ],
-      artists: [
-        { id: '5957463', name: 'Brady Africk', username: 'BradyLF' }
+      contributors: [
+        { id: '106511', name: 'Andrew Kelley', username: 'andrewrk' },
+        { id: '87436', name: 'Josh Wolfe', username: 'thejoshwolfe' },
+        { id: '850714', name: 'Georges Oates Larsen', username: 'flynnn' },
+        { id: '2260564', name: 'Harold Feit', username: 'DreadWingKnight' },
+        { id: '5000732', name: '', username: 'ciolt', extra: 'website' },
+        { id: '1270100', name: 'Will Franzen', username: 'wtfaremyinitials' },
+        { id: '1077050', name: 'Dennis Bartlett', username: 'dcbartlett' },
       ]
     }
   }
@@ -41,13 +41,16 @@ class Members extends Component {
           <li><a href="http://flying-squid.prismarine.js.org/">Flying-squid</a> : Create Minecraft servers with a powerful, stable, and high level JavaScript API.</li>
           <li><a href="https://github.com/PrismarineJS/node-minecraft-protocol">Minecraft protocol</a> : Parse and serialize minecraft packets, plus authentication and encryption..</li>
         </ul>
+        <h2>How to contribute</h2>
+        <p>Go to <a href="https://github.com/PrismarineJS/prismarine-contribute">prismarine-contribute</a> to learn more about the projects
+        and start contributing !</p>
         <h2>Meet the Team</h2>
         <p>PrismarineJS is made possible by many contributors who have put their time and effort into making the project possible.</p>
         <div className="row">
           <div className="col-md">
-            <h3>Developers</h3>
+            <h3>Maintainers</h3>
             <ul>
-              {this.state.developers.map((e) => {
+              {this.state.maintainers.map((e) => {
                   return (
                     <li key={e.id}>
                       <img src={`https://avatars.githubusercontent.com/u/${e.id}?s=54`} alt="true" /> {e.name} <a href={`https://github.com/${e.username}`}>@{e.username}</a> {e.extra ? (<code>{e.extra}</code>) : undefined }
@@ -57,14 +60,14 @@ class Members extends Component {
             </ul>
           </div>
           <div className="col-md">
-            <h3>Media</h3>
+            <h3>Contributors</h3>
             <ul>
-              {this.state.artists.map((e) => {
-                  return (
-                    <li key={e.id}>
-                      <img src={`https://avatars.githubusercontent.com/u/${e.id}?s=54`} alt="true" /> {e.name} <a href={`https://github.com/${e.username}`}>@{e.username}</a> {e.extra ? (<code>{e.extra}</code>) : undefined }
-                    </li>
-                  )
+              {this.state.contributors.map((e) => {
+                return (
+                  <li key={e.id}>
+                    <img src={`https://avatars.githubusercontent.com/u/${e.id}?s=54`} alt="true" /> {e.name} <a href={`https://github.com/${e.username}`}>@{e.username}</a> {e.extra ? (<code>{e.extra}</code>) : undefined }
+                  </li>
+                )
               })}
             </ul>
           </div>
