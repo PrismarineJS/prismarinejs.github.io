@@ -11,6 +11,7 @@ class Members extends Component {
       maintainers: [
         { id: '2346494', name: 'Romain Beaumont', username: 'rom1504' },
         { id: '1069318', name: 'Robin Lambertz', username: 'roblabla' },
+        { id: '1977472', name: 'Karang', username: 'Karang' },
         { id: '8526903', name: 'Keegan', username: 'mhsjlw', extra: 'flying-squid' },
         { id: '13330620', name: 'Kasper Seweryn', username: 'wvffle', extra: 'mineflayer' },
         { id: '8838132', name: 'plexigras', username: 'plexigras', extra: 'mineflayer'},
