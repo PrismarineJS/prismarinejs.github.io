@@ -37,10 +37,10 @@ class Members extends Component {
       <div className="container">
         <h2>Main projects</h2>
         <ul>
-          <li><a href="http://minecraft-data.prismarine.js.org/">Minecraft data</a> : Language independent module providing minecraft data for minecraft clients, servers and libraries.</li>
-          <li><a href="http://mineflayer.prismarine.js.org/">Mineflayer</a> : Create Minecraft bots with a powerful, stable, and high level JavaScript API..</li>
-          <li><a href="http://flying-squid.prismarine.js.org/">Flying-squid</a> : Create Minecraft servers with a powerful, stable, and high level JavaScript API.</li>
-          <li><a href="https://github.com/PrismarineJS/node-minecraft-protocol">Minecraft protocol</a> : Parse and serialize minecraft packets, plus authentication and encryption..</li>
+          <li><a href="https://minecraft-data.prismarine.js.org/">Minecraft data</a> : Language independent module providing minecraft data for minecraft clients, servers and libraries.</li>
+          <li><a href="https://mineflayer.prismarine.js.org/">Mineflayer</a> : Create Minecraft bots with a powerful, stable, and high level JavaScript API..</li>
+          <li><a href="https://flying-squid.prismarine.js.org/">Flying-squid</a> : Create Minecraft servers with a powerful, stable, and high level JavaScript API.</li>
+          <li><a href="https://node-minecraft-protocol.prismarine.js.org/">Minecraft protocol</a> : Parse and serialize minecraft packets, plus authentication and encryption..</li>
         </ul>
         <h2>How to contribute</h2>
         <p>Go to <a href="https://github.com/PrismarineJS/prismarine-contribute">prismarine-contribute</a> to learn more about the projects
