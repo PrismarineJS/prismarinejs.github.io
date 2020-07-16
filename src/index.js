@@ -4,7 +4,6 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './index.css';
 import { App } from './App';
-import registerServiceWorker from './registerServiceWorker';
 
 class Index extends Component {
   render() {
@@ -23,4 +22,3 @@ class Index extends Component {
 }
 
 ReactDOM.render(<Index />, document.getElementById('root'));
-registerServiceWorker();
