@@ -7,17 +7,23 @@
   --black1: #efefef;
   --black2: #ffffff99;
   --accent0: #e83e8c;
+  /* typography */
+  --background: #ffffff;
+  --text: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-
+    --background: #000000;
+    --text: #ffffff;
   }
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  background-color: var(--background);
+  color: var(--text);
 }
 #__next {
   display: flex;
