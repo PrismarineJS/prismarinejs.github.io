@@ -1,0 +1,11 @@
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.7rem;
+}
+.icon{
+    color: var(--brand0);
+    width: 2rem;
+    height: 2rem;
+}

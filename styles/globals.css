@@ -1,0 +1,26 @@
+:root{
+  --brand0: #4db6ac;
+  --brand1: #44caa2;
+  --brand2: #13b181;
+  --brand4: #437d6d;
+  --black0: #ffffff;
+  --black1: #efefef;
+  --black2: #ffffff99;
+  --accent0: #e83e8c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

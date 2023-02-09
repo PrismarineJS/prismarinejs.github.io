@@ -1,0 +1,40 @@
+.promoBanner {
+    background-image: url(/static/images/background.svg), linear-gradient(45deg, #009688, #4db6ac)!important;
+    background-repeat: repeat;
+    background-size: 3.5rem, 100%;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), 0 100%);
+    transition: 0ms background-position ease;
+    padding: 1rem;
+    color: var(--black0);
+}
+.promoBanner a{
+    color: var(--black1);
+}
+.promoBanner a:hover{
+    color: var(--brand4);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+@media screen and (max-width: 768px) {
+    .main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.main a{
+    color: var(--brand2);
+}
+.main a:hover{
+    color: var(--brand4);
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
