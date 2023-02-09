@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Styles from '../styles/Home.module.css';
 import { MaintainerCard, ContributorCard } from '../components/github/index';
 
-export default function IndexPage() {
+export default function IndexPage(): JSX.Element {
     return (
         <>
             <div className={Styles.promoBanner}>
@@ -40,4 +40,4 @@ export default function IndexPage() {
             </div>
         </>
     );
-}
+};

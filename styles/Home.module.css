@@ -13,6 +13,7 @@
 .promoBanner a:hover{
     color: var(--brand4);
 }
+
 .main{
     display: flex;
     flex-direction: column;
@@ -25,7 +26,6 @@
         margin-right: 5%;
     }
 }
-
 .main a{
     color: var(--brand2);
 }

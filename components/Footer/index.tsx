@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Styles from './index.module.css'
 import { FaTwitter, FaDiscord, FaGithub } from 'react-icons/fa'
+import Styles from './index.module.css'
 
 export default function Footer(): JSX.Element {
     return (

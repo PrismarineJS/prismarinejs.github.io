@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Styles from '../styles/Custom404.module.css';
 
-export default function Custom404() {
+export default function Custom404(): JSX.Element {
     return (
         <>
         <div className={Styles.promoBanner}>

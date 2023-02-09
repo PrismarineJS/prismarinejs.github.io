@@ -4,13 +4,13 @@ import Styles from './index.module.css';
 
 interface Props {
   username: string;
-}
+};
 
 interface User {
   avatar_url: string;
   html_url: string;
   name: string;
-}
+};
 
 export const GitHubProfile: React.FC<Props> = ({ username }) => {
   const [user, setUser] = useState<User | null>(null);
@@ -20,14 +20,14 @@ export const GitHubProfile: React.FC<Props> = ({ username }) => {
       const response = await fetch(`https://api.github.com/users/${username}`);
       const data = await response.json();
       setUser(data);
-    }
+    };
 
     fetchData();
   }, [username]);
 
   if (!user) {
     return <p>Loading...</p>;
-  }
+  };
 
   return (
     <>
