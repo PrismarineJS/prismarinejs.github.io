@@ -1,0 +1,28 @@
+.promoBanner {
+    background-image: url(/static/images/background.svg), linear-gradient(45deg, #009688, #4db6ac)!important;
+    background-repeat: repeat;
+    background-size: 3.5rem, 100%;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), 0 100%);
+    transition: 0ms background-position ease;
+    padding: 1rem;
+    color: var(--black0);
+}
+.promoBanner a{
+    color: var(--black1);
+}
+.promoBanner a:hover{
+    color: var(--brand4);
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap : 3rem;
+}
+
+.main a{
+    color: var(--brand0);
+}
+.main a:hover{
+    color: var(--brand1);
+}
