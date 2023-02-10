@@ -1,0 +1,40 @@
+name: Generate Preview
+
+on:
+  pull_request:
+    types: [labeled]
+    name: generate preview
+
+env:
+  PR_NUMBER: ${{ github.event.pull_request.number }}
+  REPO_NAME: ${{ github.repository }}
+
+jobs:
+  generate_preview:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check label
+      if: contains(github.event.label.name, "generate preview")
+      run: echo "Generating preview for PR #${{ env.PR_NUMBER }}"
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+
+    - name: Install dependencies
+      run: |
+        npm ci
+
+    - name: Build and export Next.js app
+      run: |
+        npm run build
+        npm run export
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
+        cname: ${{ env.REPO_NAME }}.github.io/preview/${{ env.PR_NUMBER }}
