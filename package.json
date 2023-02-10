@@ -5,9 +5,9 @@
   "private": true,
   "homepage": "https://prismarinejs.github.io/",
   "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "typescript": "4.9.5"
   },
