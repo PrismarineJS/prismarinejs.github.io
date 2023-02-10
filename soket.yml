@@ -1,0 +1,10 @@
+# top level version field is required
+version: 2
+
+projectIgnorePaths:
+  - ./package.json
+
+githubApp:
+  enabled: true # enable/disable the Socket.dev GitHub app entirely
+  pullRequestAlertsEnabled: true # enable/disable GitHub app pull request alert checks
+  projectReportsEnabled: true # enable/disable Github app project report checks
