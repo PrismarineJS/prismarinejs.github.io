@@ -1,7 +1,4 @@
 # [prismarine.js.org](https://prismarine.js.org)
 
-## To Do
-
-* [ ] finish github components
-* [ ] feat footer
-* [ ] feat style
+This repo contains the website for prismarineJS.
+It's was build using [next.js](https://nextjs.org/).
