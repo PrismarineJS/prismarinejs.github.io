@@ -1,0 +1,25 @@
+name: 🚀 Feature Request For PrismarineJS Website
+description: Suggest an idea for this project 🤔.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for wanting to suggest an idea for the PrismarineJS website.
+        Please fill in the template below. If unsure about something, just do as best
+        as you're able. If you are suggesting a visual change, it will be much easier
+        for us to implement it when you attach a screenshot as well.
+  - type: input
+    attributes:
+      label: 'URL:'
+      description: The URL of the page you are suggesting a change on.
+      placeholder: https://prismarine.js.org/
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 'Description:'
+      placeholder: |
+        I propose that we change the text on the page to say "Hello World" instead of "Hello World!"
+    validations:
+      required: true
