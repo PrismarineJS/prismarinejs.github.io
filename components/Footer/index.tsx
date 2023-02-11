@@ -8,7 +8,7 @@ export default function Footer(): JSX.Element {
             <Link href='https://twitter.com/prismarinejs'>
                 <FaTwitter className={Styles.icon} />
             </Link>
-            <Link href=''>
+            <Link href='https://discord.com/invite/GsEFRM8'>
                 <FaDiscord className={Styles.icon} />
             </Link>
             <Link href='https://github.com/prismarinejs'>
