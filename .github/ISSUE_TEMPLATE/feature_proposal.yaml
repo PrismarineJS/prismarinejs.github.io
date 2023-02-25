@@ -1,0 +1,17 @@
+name: 🚀 feature proposal
+description: Suggest a new feature for the website
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature proposal!
+  - type: textarea
+    attributes:
+      label: 'Enter your suggestions in details:'
+      placeholder: |
+        1. this is a suggestion
+        2. what do you think?
+        3. this is a suggestion
+    validations:
+      required: true

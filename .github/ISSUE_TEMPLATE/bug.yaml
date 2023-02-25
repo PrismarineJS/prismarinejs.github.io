@@ -1,0 +1,48 @@
+name: 🐛 Bug Report for the website
+description: Create a report to help us improve the website
+labels: [bug]
+body:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    attributes:
+      label: 'URL:'
+      description: The URL of the page you are reporting an issue on.
+      placeholder: 'https://www.example.com'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 'Browser Name:'
+      description: What kind of browser are you using?
+      placeholder: Chrome
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 'Browser Version:'
+      description: What version of browser are you using?
+      placeholder: '103.0.5060.134'
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 'Operating System:'
+      description: What operating system are you using
+        (Write it in full, with version number)?
+      placeholder: 'Windows 10, 21H2, 19044.1826'
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 'How to reproduce the issue:'
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
