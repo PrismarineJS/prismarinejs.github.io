@@ -19,7 +19,7 @@
     "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^5.0.0"
   },
   "browserslist": [
     ">0.2%",
