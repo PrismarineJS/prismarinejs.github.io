@@ -1,1 +1,1 @@
-# [prismarine.js.org](https://prismarine.js.org)
+# [prismarinejs.github.io](prismarinejs.github.io)
