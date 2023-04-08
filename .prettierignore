@@ -1,0 +1,6 @@
+build
+.next
+out
+coverage
+node_modules
+tests

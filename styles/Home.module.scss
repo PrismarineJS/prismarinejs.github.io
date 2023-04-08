@@ -1,5 +1,6 @@
 .promoBanner {
-    background-image: url(/static/images/background.svg), linear-gradient(45deg, #009688, #4db6ac)!important;
+    background-image: url(/static/images/background.svg),
+        linear-gradient(45deg, #009688, #4db6ac) !important;
     background-repeat: repeat;
     background-size: 3.5rem, 100%;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2rem), 0 100%);
@@ -7,32 +8,32 @@
     padding: 1rem;
     color: var(--black0);
 }
-.promoBanner a{
+.promoBanner a {
     color: var(--black1);
 }
-.promoBanner a:hover{
+.promoBanner a:hover {
     color: var(--brand4);
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     margin-left: 25%;
     margin-right: 25%;
 }
 @media screen and (max-width: 768px) {
-    .main{
+    .main {
         margin-left: 5%;
         margin-right: 5%;
     }
 }
-.main a{
+.main a {
     color: var(--brand2);
 }
-.main a:hover{
+.main a:hover {
     color: var(--brand4);
 }
-.team{
+.team {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

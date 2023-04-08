@@ -1,8 +1,8 @@
 [
-  { "id": 0, "username": "rom1504" },
-  { "id": 1, "username": "roblabla" },
-  { "id": 2, "username": "Karang" },
-  { "id": 3, "username": "mhsjlw", "extra": "flying-squid" },
-  { "id": 4, "username": "wvffle", "extra": "mineflayer" },
-  { "id": 5, "username": "plexigras", "extra": "mineflayer"}
+    { "id": 0, "username": "rom1504" },
+    { "id": 1, "username": "roblabla" },
+    { "id": 2, "username": "Karang" },
+    { "id": 3, "username": "mhsjlw", "extra": "flying-squid" },
+    { "id": 4, "username": "wvffle", "extra": "mineflayer" },
+    { "id": 5, "username": "plexigras", "extra": "mineflayer" }
 ]

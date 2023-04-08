@@ -1,6 +1,6 @@
 version: 2
 updates:
-  - package-ecosystem: ""
-    directory: "/"
-    schedule:
-      interval: "weekly"
+    - package-ecosystem: ''
+      directory: '/'
+      schedule:
+          interval: 'weekly'

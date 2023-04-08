@@ -2,9 +2,9 @@
 version: 2
 
 projectIgnorePaths:
-  - ./package.json
+    - ./package.json
 
 githubApp:
-  enabled: true # enable/disable the Socket.dev GitHub app entirely
-  pullRequestAlertsEnabled: true # enable/disable GitHub app pull request alert checks
-  projectReportsEnabled: true # enable/disable Github app project report checks
+    enabled: true # enable/disable the Socket.dev GitHub app entirely
+    pullRequestAlertsEnabled: true # enable/disable GitHub app pull request alert checks
+    projectReportsEnabled: true # enable/disable Github app project report checks
