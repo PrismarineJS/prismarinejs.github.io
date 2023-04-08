@@ -38,9 +38,12 @@ export const GitHubProfile: React.FC<Props> = ({ username }) => {
                 src={user.avatar_url}
                 alt={`${user.name}'s profile picture`}
             />
-            <Link href={user.html_url} className={Styles.github_username}>
-                @{user.name ? user.name : username}
-            </Link>
+            <p>
+                {user.name ? user.name : username}{' '}
+                <Link href={user.html_url} className={Styles.github_username}>
+                    @{user.name ? user.name : username}
+                </Link>
+            </p>
         </>
     );
 };
