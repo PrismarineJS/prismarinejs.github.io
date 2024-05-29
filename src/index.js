@@ -1,24 +1,19 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom/client'
 
-import './index.css';
-import { App } from './App';
+import './index.css'
+import { App } from './App'
 
 class Index extends Component {
-  render() {
+  render () {
     return (
       <div>
-        <BrowserRouter>
-          <div>
-            <Switch>
-              <Route exact path='/' component={App}/>
-            </Switch>
-          </div>
-        </BrowserRouter>
+        <App />
       </div>
     )
   }
 }
 
-ReactDOM.render(<Index />, document.getElementById('root'));
+const container = document.getElementById('root')
+const root = ReactDOM.createRoot(container)
+root.render(<Index />)
