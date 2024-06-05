@@ -25,7 +25,7 @@ function Members () {
   }
 
   return (
-    <div className='container'>
+    <div className='container' style={{ marginTop: 20 }}>
       <h2>Main projects</h2>
       <ul>
         <li><a href='https://prismarinejs.github.io/minecraft-data'>Minecraft data</a> : Language independent module providing minecraft data for minecraft clients, servers and libraries.</li>
@@ -69,6 +69,17 @@ function Members () {
   )
 }
 
+function NavEntry ({ name, link, image }) {
+  return (
+    <li className='nav-item nav-button'>
+      <a className='nav-link' href={link}>
+        <img src={image} style={{ width: 24, height: 24 }} />
+        {name}
+      </a>
+    </li>
+  )
+}
+
 export function App () {
   const [backgroundPosition, setBackgroundPosition] = useState('0 0, 0 0')
 
@@ -85,17 +96,18 @@ export function App () {
           <a className='navbar-brand' href='/'><img className='d-inline-block align-top' src='/images/prismarine_js.svg' width={32} height={32} alt='PrismarineJS' /></a><button className='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarContent' aria-controls='navbarContent' aria-expanded='false' aria-label='Toggle navigation'><span className='navbar-toggler-icon' /></button>
           <div className='collapse navbar-collapse' id='navbarContent'>
             <ul className='navbar-nav mr-auto'>
-              <li className='nav-item'><a className='nav-link' href='https://github.com/PrismarineJS'>GitHub</a></li>
+              <NavEntry name='GitHub' link='https://github.com/PrismarineJS' image='https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg' />
+              <NavEntry name='Discord' link='https://discord.gg/GsEFRM8' image='https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg' />
             </ul>
           </div>
         </nav>
-        <div className='container promo pb-5 pt-5 mb-5'>
+        <div className='container promo pb-5 pt-5 mb-5' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', width: 'fit-content' }}>
           <h1 className='text-left display-4 col-md-auto'>PrismarineJS</h1>
-          <h3 className='text-left col-md-8'>Minecraft-compatible <a href='https://github.com/PrismarineJS/flying-squid' title='PrismarineJS/Flying-Squid on GitHub'>server</a>, <a href='https://github.com/PrismarineJS/mineflayer' title='PrismarineJS/Mineflayer on GitHub'>bot</a>, and <a href='https://github.com/PrismarineJS/node-minecraft-protocol' title='PrismarineJS/Node-Minecraft-Protocol on GitHub'>API</a>. All written in JavaScript.</h3>
+          <h3 className='text-left col-md-12'>Minecraft-compatible <a href='https://github.com/PrismarineJS/flying-squid' title='PrismarineJS/Flying-Squid on GitHub'>server</a>, <a href='https://github.com/PrismarineJS/mineflayer' title='PrismarineJS/Mineflayer on GitHub'>bot</a>, and <a href='https://github.com/PrismarineJS/node-minecraft-protocol' title='PrismarineJS/Node-Minecraft-Protocol on GitHub'>API</a>. All written in JavaScript.</h3>
           <div className='col-md-auto mt-4'><a href='https://github.com/PrismarineJS'><button className='btn btn-light' type='button'>Check it out on GitHub</button></a></div>
         </div>
       </div>
-      <div className='content container-fluid'>
+      <div className='content container-fluid' style={{ display: 'flex', justifyContent: 'center' }}>
         <div className='row markdown-render meetTheTeam'>
           <Members />
         </div>
