@@ -5,21 +5,25 @@
   "homepage": "https://prismarinejs.github.io/",
   "dependencies": {
     "bootstrap": "^5.0.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test:react": "react-scripts test --env=jsdom --watchAll=false",
+    "test": "npm run lint && npm run test:react",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d build",
+    "lint": "standard",
+    "fix": "standard --fix"
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "standard": "^17.1.0"
   },
   "browserslist": [
     ">0.2%",
