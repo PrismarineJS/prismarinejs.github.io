@@ -30,3 +30,6 @@ jobs:
         publish_dir: build
         # to branch
         publish_branch: master
+        # set commit details to github-actions
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
